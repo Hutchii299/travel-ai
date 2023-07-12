@@ -1,10 +1,9 @@
-import { nanoid } from '@/lib/utils'
-import { Chat } from '@/components/chat'
-
-export const runtime = 'edge'
-
-export default function IndexPage() {
-  const id = nanoid()
-
-  return <Chat id={id} />
+const LandingPage = () => {
+  return (
+    <div className="pb-[200px] pt-4 md:pt-10 container mx-auto max-w-7xl">
+      Landing page
+    </div>
+  )
 }
+
+export default LandingPage
