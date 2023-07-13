@@ -20,6 +20,7 @@ module.exports = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        transparent: 'transparent',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
@@ -80,6 +81,22 @@ module.exports = {
           '100%': {
             transform: 'translateX(-100%)'
           }
+        },
+        typing: {
+          '0%': {
+            width: 0
+          },
+          '100%': { width: '100%' }
+        },
+        blinking: {
+          '0%': { 'border-right-color': 'transparent' },
+          '50%': { 'border-right-color': 'black' },
+          '100%': { 'border-right-color': 'transparent' }
+        },
+        'pop-in': {
+          '0%': { opacity: 0, transform: 'scale(0)' },
+          '80%': { opacity: 1, transform: 'scale(1.05)' },
+          '100%': { opacity: 1, transform: 'scale(1)' }
         }
       },
       animation: {
@@ -88,7 +105,10 @@ module.exports = {
         'slide-to-left':
           'slide-to-left 0.25s cubic-bezier(0.82, 0.085, 0.395, 0.895)',
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        typing:
+          'typing 3s steps(50, end) 1s forwards, blinking 0.75s infinite ease-in',
+        'pop-in': 'pop-in 0.3s cubic-bezier(0.82, 0.085, 0.395, 0.895)'
       }
     }
   },
