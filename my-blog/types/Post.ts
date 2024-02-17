@@ -1,6 +1,7 @@
 import { PortableTextBlock } from "sanity";
 import { Author } from "./Author";
 import { Category } from "./Category";
+import type { Image } from "sanity";
 
 export type Post = {
   _id: string;
@@ -9,8 +10,9 @@ export type Post = {
   slug: string;
   author: Author;
   publishedAt: string;
+  readtime: number;
   categories: Category[];
-  mainImage: string;
+  featuredImg: Image;
   imgAlt: string;
   excerpt: string;
   body: PortableTextBlock[];

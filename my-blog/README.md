@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Tasks:
 
-## Getting Started
+- npm install
+- create the sanity project with (npm -y create sanity@latest) [it may ask you to create a project when you npm install]
+- add project and datasetId to .env
+- you'll need to create a api key for the sanity studio preview https://www.sanity.io/guides/nextjs-app-router-live-preview#02c554b8fddf
+- change the meta title "Blog Name" to name of website and also the URL in .env
+- change the url in robots.txt
+- social media links in footer
 
-First, run the development server:
+ONCE Deployed:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Add the deployed URL to the CORS orgin in sanity project online
+- You will need to invite the client to create an account within the members section of project online. This will give them access to their /admin route
+- set up mailchimp for the client. follow instructions here -> https://www.commoninja.com/blog/build-email-collecting-app-next-mailchimp#Connecting-the-Client
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Else:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- privacy policy
+- need to handle contact form submission
+- logo
+- performance optimisation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+reactiveweb.com.au
